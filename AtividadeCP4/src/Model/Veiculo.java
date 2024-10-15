@@ -7,7 +7,7 @@ public class Veiculo {
     private int ano;
     private Seguro seguro;
 
-    public Veiculo(String placa, String modelo, int ano) {
+    public Veiculo() {
         this.placa = placa;
         this.modelo = modelo;
         this.ano = ano;
