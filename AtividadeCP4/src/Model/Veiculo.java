@@ -7,9 +7,6 @@ public class Veiculo {
     private int ano;
     private Seguro seguro;
 
-    public Veiculo() {
-    }
-
     public Veiculo(String placa, String modelo, int ano) {
         this.placa = placa;
         this.modelo = modelo;
@@ -24,20 +21,12 @@ public class Veiculo {
         this.id = id;
     }
 
-    public String getPlaca() {
-        return placa;
+    public Seguro getSeguro() {
+        return seguro;
     }
 
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setSeguro(Seguro seguro) {
+        this.seguro = seguro;
     }
 
     public int getAno() {
@@ -48,12 +37,20 @@ public class Veiculo {
         this.ano = ano;
     }
 
-    public Seguro getSeguro() {
-        return seguro;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void setSeguro(Seguro seguro) {
-        this.seguro = seguro;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
     }
 
     @Override
@@ -67,3 +64,5 @@ public class Veiculo {
                 '}';
     }
 }
+
+

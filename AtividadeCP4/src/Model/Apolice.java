@@ -6,10 +6,10 @@ public class Apolice {
     private String cobertura;
     private double valor;
 
-    public Apolice(int id, Seguro seguro, String cobertura, double valor) {
+    public Apolice(int id, double valor, String cobertura, Seguro seguro) {
         this.id = id;
-        this.seguro = seguro;
-        this.cobertura = cobertura;
         this.valor = valor;
+        this.cobertura = cobertura;
+        this.seguro = seguro;
     }
 }

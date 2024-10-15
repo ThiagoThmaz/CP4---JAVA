@@ -7,11 +7,11 @@ public class Sinistro {
     private String data;
     private String descricao;
 
-    public Sinistro(int id, Cliente cliente, Veiculo veiculo, String data, String descricao) {
+    public Sinistro(int id, String descricao, String data, Veiculo veiculo, Cliente cliente) {
         this.id = id;
-        this.cliente = cliente;
-        this.veiculo = veiculo;
-        this.data = data;
         this.descricao = descricao;
+        this.data = data;
+        this.veiculo = veiculo;
+        this.cliente = cliente;
     }
 }

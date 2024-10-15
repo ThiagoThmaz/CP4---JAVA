@@ -7,21 +7,10 @@ public class Cliente {
     private String contato;
 
     public Cliente() {
-    }
-
-    public Cliente(int id, String nome, String endereco, String contato) {
         this.id = id;
         this.nome = nome;
         this.endereco = endereco;
         this.contato = contato;
-    }
-
-    public void registroSN(){
-        System.out.println("Registrado pra cliente:" + nome);
-    }
-
-    public double calcularDescontoSeguro(){
-        return 0.1;
     }
 
     public int getId() {
